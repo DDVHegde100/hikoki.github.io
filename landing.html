@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikoki - Loading</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #00a848;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #loading-gif {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading-gif">
+        <img src="your-animation.gif" alt="Loading Animation">
+    </div>
+
+    <script>
+        setTimeout(function () {
+            var loadingGif = document.getElementById('loading-gif');
+            if (loadingGif) {
+                loadingGif.style.display = 'none';
+            }
+            window.location.href = 'index.html';
+        }, 6500);
+    </script>
+</body>
+</html>
